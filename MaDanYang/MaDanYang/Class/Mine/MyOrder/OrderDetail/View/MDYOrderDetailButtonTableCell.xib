@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="MDYOrderDetailButtonTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gna-3g-fHF">
+                        <rect key="frame" x="224" y="14" width="80" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="lop-sF-bxh"/>
+                            <constraint firstAttribute="height" constant="38" id="roI-bz-ej9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="查看物流">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="logisticsButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FfK-4g-66X"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1e-tO-DRs">
+                        <rect key="frame" x="132" y="14" width="80" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="DLT-lf-adB"/>
+                            <constraint firstAttribute="width" constant="80" id="hRg-cp-ANn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="申请换货">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="changeButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4iU-0E-rOk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gna-3g-fHF" secondAttribute="trailing" constant="16" id="O3S-oq-vEI"/>
+                    <constraint firstItem="b1e-tO-DRs" firstAttribute="centerY" secondItem="gna-3g-fHF" secondAttribute="centerY" id="Tzz-xb-rG3"/>
+                    <constraint firstItem="gna-3g-fHF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Uh3-Aa-6p0"/>
+                    <constraint firstItem="gna-3g-fHF" firstAttribute="leading" secondItem="b1e-tO-DRs" secondAttribute="trailing" constant="12" id="aP2-7E-vYl"/>
+                    <constraint firstItem="gna-3g-fHF" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-10" id="nCq-oT-Xvf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="changeButton" destination="b1e-tO-DRs" id="sa2-NA-SiD"/>
+                <outlet property="logisticsButton" destination="gna-3g-fHF" id="AM6-gw-6Sf"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,44 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'MaDanYang' do
+  # Comment the next line if you don't want to use dynamic frameworks
+#  use_frameworks!
+
+  # Pods for MaDanYang
+  pod 'IQKeyboardManager'
+  pod 'CYLTabBarController'
+  pod 'Masonry'
+  pod 'MJExtension'
+  pod 'AFNetworking'
+  pod 'JXCategoryView'
+  pod 'MBProgressHUD'
+  pod 'lottie-ios', '~> 2.5.2'
+  pod 'DZNEmptyDataSet'
+  pod 'SDCycleScrollView'
+  pod 'TZImagePickerController'
+  pod 'YBImageBrowser', '~> 3.0.9'
+  pod 'ZFPlayer', '~> 4.0'
+  pod 'ZFPlayer/ControlView'
+  pod 'ZFPlayer/AVPlayer'
+  pod 'MJRefresh'
+  
+  pod 'WechatOpenSDK'
+  pod 'AlipaySDK-iOS'
+#  pod 'TXLiteAVSDK_Professional'
+#  pod 'TXIMSDK_iOS'
+#  pod 'TXIMSDK_TUIKit_live_iOS_Professional'
+
+  target 'MaDanYangTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MaDanYangUITests' do
+    # Pods for testing
+  end
+  
+  pre_install do |installer| Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+  end
+
+end

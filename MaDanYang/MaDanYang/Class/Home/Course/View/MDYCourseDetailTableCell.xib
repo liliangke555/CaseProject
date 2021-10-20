@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="MDYCourseDetailTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5J-Il-Ean">
+                        <rect key="frame" x="16" y="30.5" width="69.5" height="6"/>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.84313725490196079" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="r7E-j2-D5i"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课程介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKq-Qx-0eR">
+                        <rect key="frame" x="16" y="16" width="69.5" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="tuX-Xe-Q9H"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuK-Fc-TcN">
+                        <rect key="frame" x="16" y="52.5" width="288" height="20"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mY-bf-xYJ" customClass="MDYWKWebView">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5mY-bf-xYJ" secondAttribute="trailing" id="67T-cR-0eE"/>
+                            <constraint firstItem="5mY-bf-xYJ" firstAttribute="leading" secondItem="IuK-Fc-TcN" secondAttribute="leading" id="Bbn-jx-Au7"/>
+                            <constraint firstAttribute="height" constant="20" id="MBa-nt-yij"/>
+                            <constraint firstAttribute="bottom" secondItem="5mY-bf-xYJ" secondAttribute="bottom" id="PBt-Jb-baU"/>
+                            <constraint firstItem="5mY-bf-xYJ" firstAttribute="top" secondItem="IuK-Fc-TcN" secondAttribute="top" id="y9T-6r-AhS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="D5J-Il-Ean" firstAttribute="bottom" secondItem="CKq-Qx-0eR" secondAttribute="bottom" id="8PU-bF-ECQ"/>
+                    <constraint firstItem="CKq-Qx-0eR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="L1a-pU-HnW"/>
+                    <constraint firstItem="D5J-Il-Ean" firstAttribute="trailing" secondItem="CKq-Qx-0eR" secondAttribute="trailing" id="ML5-UC-cqy"/>
+                    <constraint firstAttribute="trailing" secondItem="IuK-Fc-TcN" secondAttribute="trailing" constant="16" id="NPd-8m-K4U"/>
+                    <constraint firstItem="IuK-Fc-TcN" firstAttribute="top" secondItem="D5J-Il-Ean" secondAttribute="bottom" constant="16" id="RVD-vt-U8C"/>
+                    <constraint firstItem="D5J-Il-Ean" firstAttribute="leading" secondItem="CKq-Qx-0eR" secondAttribute="leading" id="acF-Lg-H0T"/>
+                    <constraint firstItem="IuK-Fc-TcN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dRJ-oY-bWr"/>
+                    <constraint firstItem="CKq-Qx-0eR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="o3l-iU-kQL"/>
+                    <constraint firstItem="IuK-Fc-TcN" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-16" id="uUt-Vz-VM2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="webViewHeight" destination="MBa-nt-yij" id="tpL-Dx-fov"/>
+                <outlet property="wkWebView" destination="5mY-bf-xYJ" id="Mi4-BG-qdP"/>
+            </connections>
+            <point key="canvasLocation" x="-10.144927536231885" y="90.736607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

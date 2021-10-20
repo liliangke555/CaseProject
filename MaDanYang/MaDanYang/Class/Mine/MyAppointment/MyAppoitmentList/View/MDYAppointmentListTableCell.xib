@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="MDYAppointmentListTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021年10月30日的预约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vw-Pw-1FA">
+                        <rect key="frame" x="16" y="16" width="288" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xow-lB-BYf">
+                        <rect key="frame" x="16" y="43.5" width="41" height="18.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鼻科" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U8-A1-1EP">
+                                <rect key="frame" x="8" y="2" width="25" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3U8-A1-1EP" firstAttribute="top" secondItem="Xow-lB-BYf" secondAttribute="top" constant="2" id="hoM-xG-SDJ"/>
+                            <constraint firstAttribute="bottom" secondItem="3U8-A1-1EP" secondAttribute="bottom" constant="2" id="oAz-d4-hTw"/>
+                            <constraint firstItem="3U8-A1-1EP" firstAttribute="leading" secondItem="Xow-lB-BYf" secondAttribute="leading" constant="8" id="ybh-HQ-6Hj"/>
+                            <constraint firstAttribute="trailing" secondItem="3U8-A1-1EP" secondAttribute="trailing" constant="8" id="zC9-eu-esw"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mfm-Rv-Dbd">
+                        <rect key="frame" x="16" y="82" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Qq9-6G-ccx"/>
+                            <constraint firstAttribute="width" constant="32" id="ZXb-tB-WQe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吴雨曦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdJ-Vu-Xei">
+                        <rect key="frame" x="56" y="89.5" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待上门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcz-DX-xBR">
+                        <rect key="frame" x="267" y="45.5" width="37" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gz5-VU-Qxb">
+                        <rect key="frame" x="246" y="83.5" width="58" height="29"/>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.84313725490196079" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <state key="normal" title="  发晒单  ">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="publicButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fpT-d6-hgD"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EdJ-Vu-Xei" firstAttribute="leading" secondItem="Mfm-Rv-Dbd" secondAttribute="trailing" constant="8" id="162-sW-W1p"/>
+                    <constraint firstItem="7vw-Pw-1FA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="3Do-D6-LNi"/>
+                    <constraint firstItem="Xow-lB-BYf" firstAttribute="top" secondItem="7vw-Pw-1FA" secondAttribute="bottom" constant="8" id="7Aw-Fn-G5t"/>
+                    <constraint firstItem="EdJ-Vu-Xei" firstAttribute="centerY" secondItem="Mfm-Rv-Dbd" secondAttribute="centerY" id="ADn-NJ-Qwm"/>
+                    <constraint firstItem="xcz-DX-xBR" firstAttribute="centerY" secondItem="3U8-A1-1EP" secondAttribute="centerY" id="IW9-fz-Ofq"/>
+                    <constraint firstAttribute="bottom" secondItem="Mfm-Rv-Dbd" secondAttribute="bottom" constant="16" id="Kaf-rh-mtx"/>
+                    <constraint firstItem="Mfm-Rv-Dbd" firstAttribute="leading" secondItem="7vw-Pw-1FA" secondAttribute="leading" id="SMt-h7-pjP"/>
+                    <constraint firstItem="7vw-Pw-1FA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="T3T-G9-ErX"/>
+                    <constraint firstItem="Gz5-VU-Qxb" firstAttribute="centerY" secondItem="Mfm-Rv-Dbd" secondAttribute="centerY" id="Tn3-ua-fS9"/>
+                    <constraint firstItem="EdJ-Vu-Xei" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Gz5-VU-Qxb" secondAttribute="leading" constant="-10" id="W9D-C4-793"/>
+                    <constraint firstItem="Xow-lB-BYf" firstAttribute="leading" secondItem="7vw-Pw-1FA" secondAttribute="leading" id="f2e-9T-mbC"/>
+                    <constraint firstAttribute="trailing" secondItem="Gz5-VU-Qxb" secondAttribute="trailing" constant="16" id="liD-yH-4B2"/>
+                    <constraint firstAttribute="trailing" secondItem="xcz-DX-xBR" secondAttribute="trailing" constant="16" id="mbp-QF-SV6"/>
+                    <constraint firstAttribute="trailing" secondItem="7vw-Pw-1FA" secondAttribute="trailing" constant="16" id="x3W-I6-al6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="flagLabel" destination="3U8-A1-1EP" id="b1u-P8-kXM"/>
+                <outlet property="flagView" destination="Xow-lB-BYf" id="kS7-B7-REh"/>
+                <outlet property="nameLabel" destination="EdJ-Vu-Xei" id="cVr-Kt-nvJ"/>
+                <outlet property="publicButton" destination="Gz5-VU-Qxb" id="BfW-iW-Fzt"/>
+                <outlet property="titleLabel" destination="7vw-Pw-1FA" id="qNS-f8-lJw"/>
+                <outlet property="typeLabel" destination="xcz-DX-xBR" id="r68-It-9cj"/>
+                <outlet property="userImageView" destination="Mfm-Rv-Dbd" id="JEx-Ak-S97"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="128.57142857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

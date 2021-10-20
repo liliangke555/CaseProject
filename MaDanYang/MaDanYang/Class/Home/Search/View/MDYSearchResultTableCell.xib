@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="274" id="KGk-i7-Jjw" customClass="MDYSearchResultTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hKG-ML-DZf">
+                        <rect key="frame" x="16" y="87" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="RIs-uG-LOm"/>
+                            <constraint firstAttribute="width" constant="100" id="VRB-E3-zUt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快讯！世卫组织宣布新冠肺炎疫情已具有大流行特征" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsu-Wv-nB0">
+                        <rect key="frame" x="132" y="87" width="163.5" height="57.5"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 9999.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4a-sW-fEp">
+                        <rect key="frame" x="132" y="167.5" width="78.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.3万人学习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyW-mV-CWa">
+                        <rect key="frame" x="238.5" y="170" width="65.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Gh-Ot-5iW">
+                        <rect key="frame" x="16" y="87" width="47" height="20.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfs-V6-RzD">
+                        <rect key="frame" x="24" y="90" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.3万人学习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey7-uL-7Yx">
+                        <rect key="frame" x="132" y="149" width="65.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7Gh-Ot-5iW" firstAttribute="top" secondItem="hKG-ML-DZf" secondAttribute="top" id="0C1-s7-cIZ"/>
+                    <constraint firstAttribute="trailing" secondItem="SyW-mV-CWa" secondAttribute="trailing" constant="16" id="0iZ-8i-IjB"/>
+                    <constraint firstItem="rsu-Wv-nB0" firstAttribute="leading" secondItem="hKG-ML-DZf" secondAttribute="trailing" constant="16" id="3Oo-ro-q2e"/>
+                    <constraint firstItem="hKG-ML-DZf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9YC-c0-bex"/>
+                    <constraint firstItem="V4a-sW-fEp" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-16" id="BdG-43-Vfu"/>
+                    <constraint firstItem="7Gh-Ot-5iW" firstAttribute="leading" secondItem="hKG-ML-DZf" secondAttribute="leading" id="FV9-1x-L3n"/>
+                    <constraint firstItem="Xfs-V6-RzD" firstAttribute="bottom" secondItem="7Gh-Ot-5iW" secondAttribute="bottom" constant="-3" id="Fkp-7v-qFm"/>
+                    <constraint firstItem="Xfs-V6-RzD" firstAttribute="leading" secondItem="7Gh-Ot-5iW" secondAttribute="leading" constant="8" id="JRv-MN-ewM"/>
+                    <constraint firstItem="Xfs-V6-RzD" firstAttribute="trailing" secondItem="7Gh-Ot-5iW" secondAttribute="trailing" constant="-8" id="RRH-zB-W06"/>
+                    <constraint firstItem="V4a-sW-fEp" firstAttribute="top" secondItem="Ey7-uL-7Yx" secondAttribute="bottom" constant="4" id="Tk2-dG-r3y"/>
+                    <constraint firstItem="SyW-mV-CWa" firstAttribute="centerY" secondItem="V4a-sW-fEp" secondAttribute="centerY" id="VN8-2t-UzY"/>
+                    <constraint firstItem="Xfs-V6-RzD" firstAttribute="top" secondItem="7Gh-Ot-5iW" secondAttribute="top" constant="3" id="a7h-35-WsR"/>
+                    <constraint firstItem="Ey7-uL-7Yx" firstAttribute="leading" secondItem="rsu-Wv-nB0" secondAttribute="leading" id="cNP-oP-1Nj"/>
+                    <constraint firstItem="V4a-sW-fEp" firstAttribute="leading" secondItem="rsu-Wv-nB0" secondAttribute="leading" id="ehN-hJ-ppM"/>
+                    <constraint firstItem="rsu-Wv-nB0" firstAttribute="top" secondItem="hKG-ML-DZf" secondAttribute="top" id="sna-md-34W"/>
+                    <constraint firstItem="hKG-ML-DZf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tHD-yr-eYd"/>
+                    <constraint firstItem="V4a-sW-fEp" firstAttribute="bottom" secondItem="hKG-ML-DZf" secondAttribute="bottom" id="tUG-jR-bdL"/>
+                    <constraint firstItem="rsu-Wv-nB0" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-10" id="xp0-Tl-5Cx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bigImageView" destination="hKG-ML-DZf" id="Vya-co-NRM"/>
+                <outlet property="flagImageView" destination="7Gh-Ot-5iW" id="yLV-Qs-7Nf"/>
+                <outlet property="flagLabel" destination="Xfs-V6-RzD" id="8vJ-N4-Dou"/>
+                <outlet property="moneyLabel" destination="V4a-sW-fEp" id="Vla-Oy-AaA"/>
+                <outlet property="noteLabel" destination="SyW-mV-CWa" id="JVu-kh-rER"/>
+                <outlet property="notesLabel" destination="Ey7-uL-7Yx" id="Jgf-Nm-K1B"/>
+                <outlet property="titleLabel" destination="rsu-Wv-nB0" id="6Oo-MW-s0c"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="171.42857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

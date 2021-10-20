@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MDYDistributionListCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-hz-674">
+                        <rect key="frame" x="12" y="96" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="CLX-S3-UNg"/>
+                            <constraint firstAttribute="width" constant="50" id="zor-H3-vsE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赵宇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0e-0j-f1p">
+                        <rect key="frame" x="74" y="111.5" width="33" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vor-VZ-V0O">
+                        <rect key="frame" x="283" y="105" width="80" height="32"/>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.84313725490196079" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="bBY-sj-0qb"/>
+                            <constraint firstAttribute="height" constant="32" id="qsh-dB-UlK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <state key="normal" title="购买XX次">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="RVl-NK-HP8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rG-Xg-7MR">
+                        <rect key="frame" x="191" y="105" width="80" height="32"/>
+                        <color key="backgroundColor" red="0.49803921569999998" green="0.84313725490000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Czc-Xc-zn9"/>
+                            <constraint firstAttribute="width" constant="80" id="zIr-cM-clf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <state key="normal" title="分销XX次">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hb0-36-qps"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="Vor-VZ-V0O" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" id="5wo-y4-wex"/>
+                <constraint firstItem="Vor-VZ-V0O" firstAttribute="leading" secondItem="5rG-Xg-7MR" secondAttribute="trailing" constant="12" id="DHa-BP-qQx"/>
+                <constraint firstItem="n0e-0j-f1p" firstAttribute="centerY" secondItem="vdc-hz-674" secondAttribute="centerY" id="Mk7-eC-q8c"/>
+                <constraint firstItem="vdc-hz-674" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="RPC-Wb-9uP"/>
+                <constraint firstAttribute="trailing" secondItem="Vor-VZ-V0O" secondAttribute="trailing" constant="12" id="Wzn-1D-Iw2"/>
+                <constraint firstItem="n0e-0j-f1p" firstAttribute="leading" secondItem="vdc-hz-674" secondAttribute="trailing" constant="12" id="YTa-rq-cwe"/>
+                <constraint firstItem="vdc-hz-674" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" id="c4q-1y-0mJ"/>
+                <constraint firstItem="n0e-0j-f1p" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="5rG-Xg-7MR" secondAttribute="leading" constant="-10" id="heP-vK-xV7"/>
+                <constraint firstItem="5rG-Xg-7MR" firstAttribute="centerY" secondItem="Vor-VZ-V0O" secondAttribute="centerY" id="ixJ-bU-tKT"/>
+            </constraints>
+            <size key="customSize" width="375" height="198"/>
+            <connections>
+                <outlet property="detailButton" destination="Vor-VZ-V0O" id="ViI-DC-DQe"/>
+                <outlet property="distributionButton" destination="5rG-Xg-7MR" id="xlg-DJ-6Lk"/>
+                <outlet property="imageView" destination="vdc-hz-674" id="GHT-1w-G0m"/>
+                <outlet property="nameLabel" destination="n0e-0j-f1p" id="EWE-nx-p8Q"/>
+            </connections>
+            <point key="canvasLocation" x="335.50724637681162" y="113.16964285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

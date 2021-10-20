@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="MDYGroupManDetailTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_empty_icon" translatesAutoresizingMaskIntoConstraints="NO" id="d2J-LZ-YWE">
+                        <rect key="frame" x="46" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="537-n8-GPk"/>
+                            <constraint firstAttribute="width" constant="40" id="Xsy-dD-dwV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_empty_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JMp-sl-X43">
+                        <rect key="frame" x="16" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="6zY-RX-wZ7"/>
+                            <constraint firstAttribute="width" constant="40" id="pZA-Uz-WJY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王鹏云、吴恒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-KO-maD">
+                        <rect key="frame" x="98" y="27.5" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olS-pQ-4HQ">
+                        <rect key="frame" x="312.5" y="27.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JMp-sl-X43" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DSe-Xj-aOm"/>
+                    <constraint firstItem="z3g-KO-maD" firstAttribute="leading" secondItem="d2J-LZ-YWE" secondAttribute="trailing" constant="12" id="DUf-jU-eDC"/>
+                    <constraint firstItem="z3g-KO-maD" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-27.5" id="SeR-AG-qfL"/>
+                    <constraint firstItem="olS-pQ-4HQ" firstAttribute="centerY" secondItem="z3g-KO-maD" secondAttribute="centerY" id="Tv7-Xm-8uA"/>
+                    <constraint firstItem="d2J-LZ-YWE" firstAttribute="centerY" secondItem="JMp-sl-X43" secondAttribute="centerY" id="VUw-Jf-E9N"/>
+                    <constraint firstItem="JMp-sl-X43" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="W4Y-QJ-3s6"/>
+                    <constraint firstAttribute="trailing" secondItem="olS-pQ-4HQ" secondAttribute="trailing" constant="16" id="a1K-Nd-BRU"/>
+                    <constraint firstItem="z3g-KO-maD" firstAttribute="centerY" secondItem="JMp-sl-X43" secondAttribute="centerY" id="fzh-Ul-5TV"/>
+                    <constraint firstItem="d2J-LZ-YWE" firstAttribute="leading" secondItem="JMp-sl-X43" secondAttribute="trailing" constant="-10" id="qG9-4E-uhq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="nameLabel" destination="z3g-KO-maD" id="gWh-0H-Ccn"/>
+                <outlet property="noteLabel" destination="olS-pQ-4HQ" id="EJV-9H-EXy"/>
+                <outlet property="oneImageView" destination="JMp-sl-X43" id="Rno-Fg-NUJ"/>
+                <outlet property="twoImageView" destination="d2J-LZ-YWE" id="0fY-P0-BFe"/>
+            </connections>
+            <point key="canvasLocation" x="31.884057971014496" y="99.441964285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="group_empty_icon" width="40" height="40"/>
+    </resources>
+</document>

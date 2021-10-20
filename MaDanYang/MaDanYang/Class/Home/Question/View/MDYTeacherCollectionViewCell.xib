@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MDYTeacherCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="144"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JkJ-f9-FoE">
+                        <rect key="frame" x="12" y="16" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Bkj-fZ-9F7"/>
+                            <constraint firstAttribute="width" constant="50" id="Mch-CM-9eL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冯钰婕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnO-C1-nkz">
+                        <rect key="frame" x="73" y="16" width="49" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="问答次数：15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoQ-Ev-dOu">
+                        <rect key="frame" x="73" y="51.5" width="74.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcP-ki-etQ">
+                        <rect key="frame" x="115" y="96" width="97" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="69s-O8-5M4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <state key="normal" title="  100积分提问  "/>
+                        <connections>
+                            <action selector="questionButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="b48-xu-wcA"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSy-nV-3p9">
+                        <rect key="frame" x="28" y="96" width="75" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="5oP-I3-WBH"/>
+                            <constraint firstAttribute="height" constant="32" id="hog-aY-qOD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <state key="normal" title="查看回答"/>
+                        <connections>
+                            <action selector="checkButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9gl-ur-obb"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="qoQ-Ev-dOu" firstAttribute="bottom" secondItem="JkJ-f9-FoE" secondAttribute="bottom" id="1aa-On-vjH"/>
+                <constraint firstItem="pcP-ki-etQ" firstAttribute="leading" secondItem="LSy-nV-3p9" secondAttribute="trailing" constant="12" id="2HX-eL-9h2"/>
+                <constraint firstAttribute="bottom" secondItem="pcP-ki-etQ" secondAttribute="bottom" constant="16" id="CDd-xL-saC"/>
+                <constraint firstAttribute="trailing" secondItem="pcP-ki-etQ" secondAttribute="trailing" constant="12" id="CeJ-Eu-4M0"/>
+                <constraint firstItem="qoQ-Ev-dOu" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="trailing" constant="-10" id="F5e-q3-YbE"/>
+                <constraint firstItem="UnO-C1-nkz" firstAttribute="top" secondItem="JkJ-f9-FoE" secondAttribute="top" id="IX7-Cm-9zA"/>
+                <constraint firstItem="JkJ-f9-FoE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="LuN-D5-0k2"/>
+                <constraint firstItem="qoQ-Ev-dOu" firstAttribute="leading" secondItem="UnO-C1-nkz" secondAttribute="leading" id="jnC-Oq-V4i"/>
+                <constraint firstItem="UnO-C1-nkz" firstAttribute="leading" secondItem="JkJ-f9-FoE" secondAttribute="trailing" constant="11" id="qAA-Gl-ygS"/>
+                <constraint firstItem="JkJ-f9-FoE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="rbD-J9-t1S"/>
+                <constraint firstItem="LSy-nV-3p9" firstAttribute="centerY" secondItem="pcP-ki-etQ" secondAttribute="centerY" id="uKf-Yk-rT8"/>
+                <constraint firstItem="UnO-C1-nkz" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="trailing" constant="-10" id="uaC-cG-m2f"/>
+            </constraints>
+            <size key="customSize" width="224" height="144"/>
+            <connections>
+                <outlet property="chenckButton" destination="LSy-nV-3p9" id="LBz-Js-cXo"/>
+                <outlet property="headerImageView" destination="JkJ-f9-FoE" id="6mp-Y2-Xr4"/>
+                <outlet property="nameLabel" destination="UnO-C1-nkz" id="zbh-eb-6gH"/>
+                <outlet property="numlabel" destination="qoQ-Ev-dOu" id="Jl6-nX-vDT"/>
+                <outlet property="questionButton" destination="pcP-ki-etQ" id="x05-Zj-fpj"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="127.23214285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
